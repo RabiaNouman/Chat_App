@@ -16,6 +16,7 @@ const App = () => {
       userSecret={localStorage.getItem('password')}
       projectID='3150476c-7852-45dc-b62a-8a0d704f0464'
       renderChatFeed={(chatAppProps) => <ChatFeed {... chatAppProps}/>}
+      onNewMessage={() => new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play()}
     />
   )
 }
